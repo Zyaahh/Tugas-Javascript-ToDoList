@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>To-Do List</title>
+
+    <!-- Menghubungkan HTML dengan CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <!-- Header Utama-->
+        <header>
+            <div class="judul-area">
+                <div class="icon-header">✓</div>
+                    <div class="teks-header">
+                        <h1>My To-Do List 📚</h1>
+                    <p class="desc">
+                        Hal kecil yang kamu lakukan hari ini,
+                        akan membawa kamu ke tujuan besar nanti.<br>
+                        Yukk, mulai catat apa saja yang kamu akan lakukan ✨
+                    </p>
+                    </div>
+            </div>
+
+            <div class="motivasi">
+                You<br>
+                Can<br>
+                Do It!
+            </div>
+        </header>
+
+
+        <!-- Area input -->
+        <div class="input-area">
+            <div class="icon-input">
+                ✎
+            </div>
+            <input type="text" id="input-tugas" placeholder="Ketik di sini...">
+            <button id="btn-tambah">
+                Tambah
+            </button>
+
+        </div>
+
+        <!-- Judul daftar tugas -->
+        <div class="judul-daftar">
+            <h2>
+                📋 Daftar Tugas
+                <span id="jumlah-tugas">(0)</span>
+            </h2>
+
+            <div class="badge">
+                <span id="tugas-tersisa">0</span> tersisa
+            </div>
+        </div>
+
+
+        <!-- Tempat tugas ditampilkan -->
+        <ul id="daftar-tugas"></ul>
+
+
+        <!-- Pesan ketika belum ada tugas -->
+        <p id="pesan-kosong">
+            Belum Ditambahkan Kembali. Masih Kosong
+        </p>
+        <hr>
+        <!-- Footer -->
+        <footer>
+            @copy : Tiara Ramziyah Athallah
+        </footer>
+    </div>
+
+    <!-- Menghubungkan HTML dengan JavaScript -->
+    <script src="app.js"></script>
+
+</body>
+</html>
